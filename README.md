@@ -15,14 +15,13 @@ If you convert OTF font like SourceHanSans to TTF using [fontforge](https://font
 * ttx : 
  * from [AFDKO](http://www.adobe.com/jp/devnet/opentype/afdko.html)
  * from [fonttools](https://github.com/behdad/fonttools/)
-* Optional : fontforge or Glyphs to convert otf to ttf.
+* fontforge
 
 
 ## How to use
 
 ```
 bundle install
-fontforge -script otf-to-ttf.sh [original otf font]
 bundle exec ruby process-cmap.rb [original otf font]
 ```
 

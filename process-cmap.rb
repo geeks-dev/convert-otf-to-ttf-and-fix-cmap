@@ -8,6 +8,7 @@ ttf_ttx = basename + "-ttf.ttx"
 modified_ttx = basename + "-ttf-modified.ttx"
 modified_file = "cmap_modified/" + ttf_file
 
+system "fontforge -script otf-to-ttf.sh #{original_file} "
 system "ttx -t cmap -o #{original_ttx} #{original_file} "
 system "ttx -t cmap -o #{ttf_ttx} #{ttf_file} "
 
